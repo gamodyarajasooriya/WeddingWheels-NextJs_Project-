@@ -4,40 +4,40 @@ import Image from 'next/image';
 export default function Navbar() {
   return (
     <nav style={{ 
-      background: 'linear-gradient(90deg, #4A2C2A 0%, #3D2422 50%, #311C1A 100%)', 
-      borderBottom: '5px solid #F8F1E9', 
-      padding: '12px 20px', 
+      background: '#F7E7CE',
+      borderBottom: '3px solid #c74852ff', 
+      padding: '16px 24px', 
       display: 'flex', 
       justifyContent: 'space-between', 
       alignItems: 'center', 
-      color: '#F8F1E9',
-      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+      boxShadow: '0 2px 8px rgba(125, 32, 39, 0.15)'
     }}>
       {/* Logo Section */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        <Image src="/wedding-logo.png" alt="Ceylon Wedding Cars Logo" width={120} height={40} />
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontSize: '24px' }}>💒</span>
-          <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#F8F1E9' }}>Ceylon Wedding Cars</span>
-        </div>
-      </div>
+<div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+  <div style={{ fontSize: '24px', fontWeight: 'bold', letterSpacing: '0.3px' }}>
+    <span style={{ color: 'rgba(66, 15, 20, 1)' }}>Wedding</span>
+    <span style={{ color: '#7D2027' }}>Wheels</span>
+  </div>
+</div>
+
       
       {/* Navigation Links */}
       <ul style={{ 
         listStyle: 'none', 
         display: 'flex', 
-        gap: '30px', 
+        gap: '32px', 
         margin: 0, 
         padding: 0,
         alignItems: 'center'
       }}>
         <li>
           <Link href="/" style={{ 
-            color: '#F8F1E9', 
+            color: '#7D2027', 
             textDecoration: 'none', 
-            fontWeight: '500',
-            padding: '8px 12px',
-            borderRadius: '6px',
+            fontWeight: '600',
+            fontSize: '16px',
+            padding: '10px 16px',
+            borderRadius: '8px',
             transition: 'all 0.3s ease'
           }}>
             Home
@@ -45,11 +45,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/fleet" style={{ 
-            color: '#F8F1E9', 
+            color: '#4A4A4A', 
             textDecoration: 'none', 
             fontWeight: '500',
-            padding: '8px 12px',
-            borderRadius: '6px',
+            fontSize: '16px',
+            padding: '10px 16px',
+            borderRadius: '8px',
             transition: 'all 0.3s ease'
           }}>
             Our Fleet
@@ -57,11 +58,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/packages" style={{ 
-            color: '#F8F1E9', 
+            color: '#4A4A4A', 
             textDecoration: 'none', 
             fontWeight: '500',
-            padding: '8px 12px',
-            borderRadius: '6px',
+            fontSize: '16px',
+            padding: '10px 16px',
+            borderRadius: '8px',
             transition: 'all 0.3s ease'
           }}>
             Wedding Packages
@@ -69,11 +71,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/gallery" style={{ 
-            color: '#F8F1E9', 
+            color: '#4A4A4A', 
             textDecoration: 'none', 
             fontWeight: '500',
-            padding: '8px 12px',
-            borderRadius: '6px',
+            fontSize: '16px',
+            padding: '10px 16px',
+            borderRadius: '8px',
             transition: 'all 0.3s ease'
           }}>
             Gallery
@@ -81,11 +84,12 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="/contact" style={{ 
-            color: '#F8F1E9', 
+            color: '#4A4A4A', 
             textDecoration: 'none', 
             fontWeight: '500',
-            padding: '8px 12px',
-            borderRadius: '6px',
+            fontSize: '16px',
+            padding: '10px 16px',
+            borderRadius: '8px',
             transition: 'all 0.3s ease'
           }}>
             Contact Us
@@ -96,19 +100,16 @@ export default function Navbar() {
       {/* Call to Action Button */}
       <div>
         <Link href="/booking" style={{ 
-          background: '#4A2C2A', 
-          color: '#F8F1E9', 
-          padding: '10px 20px', 
+          background: '#7D2027', 
+          color: '#FFFFFF', 
+          padding: '12px 24px', 
           borderRadius: '8px', 
           textDecoration: 'none', 
-          display: 'flex', 
-          alignItems: 'center', 
-          gap: '8px',
           fontWeight: '600',
-          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+          fontSize: '16px',
+          boxShadow: '0 3px 6px rgba(125, 32, 39, 0.3)',
           transition: 'all 0.3s ease'
         }}>
-          <span style={{ fontSize: '16px' }}>💍</span>
           Book Your Wedding Car
         </Link>
       </div>
